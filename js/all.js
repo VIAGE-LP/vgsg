@@ -104,6 +104,6 @@ $(document).ready(function () {
     var url = new URL(getUrlString);
     $('.test').click(function (e) {
         e.preventDefault();
-        window.open(`https://viagebeautybra.com/sg/vgsgeng/${url.search}`);
+        window.location.assign(`https://viagebeautybra.com/sg/vgsgeng/${url.search}`)
     });
 });
