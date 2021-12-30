@@ -5,22 +5,22 @@ $(document).ready(function () {
     });
     observer.observe();
     // 立即購買btn動態
-    $('.offerbtn, .offerbtn_m').click(function (e) { 
+    $('.offerbtn, .offerbtn_m').click(function (e) {
         e.preventDefault();
         $('html , body').animate({
             scrollTop: $('#size').offset().top,
-        },900);
+        }, 900);
     });
     // 立即訂購btn動態
-    $('.buybtn').click(function (e) { 
+    $('.buybtn').click(function (e) {
         e.preventDefault();
         $('html , body').animate({
             scrollTop: $('#size').offset().top,
-        },900);
+        }, 900);
     });
 
     //偵測sns line btn 手機版還是電腦版，連結不同
-    var vw=$(window).width();
+    var vw = $(window).width();
     if (vw <= 768) {
         $(".line_link").attr("href", "https://bit.ly/2Bpg9M6");
     } else {
@@ -97,5 +97,13 @@ $(document).ready(function () {
     $('.A7').click(function (e) {
         e.preventDefault();
         $(".A7").hide();
+    });
+
+    // 抓取網址參數後跳轉至vgsgeng
+    var getUrlString = location.href;
+    var url = new URL(getUrlString);
+    $('.test').click(function (e) {
+        e.preventDefault();
+        window.open(`https://viagebeautybra.com/sg/vgsgeng/${url.search}`);
     });
 });
