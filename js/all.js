@@ -102,7 +102,7 @@ $(document).ready(function () {
     // 抓取網址參數後跳轉至vgsgeng
     var getUrlString = location.href;
     var url = new URL(getUrlString);
-    $('.test').click(function (e) {
+    $('.eng_link').click(function (e) {
         e.preventDefault();
         window.location.assign(`https://viagebeautybra.com/sg/vgsgeng/${url.search}`)
     });
