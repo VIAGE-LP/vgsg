@@ -27,78 +27,7 @@ $(document).ready(function () {
         $(".line_link").attr("href", "https://line.me/R/ti/p/%40fhl1857j");
     }
 
-    //QA下拉選單
-    // Q1
-    $(".A1").hide();
-    $('.Q1').click(function (e) {
-        e.preventDefault();
-        $(".A1").toggle();;
-    });
-    $('.A1').click(function (e) {
-        e.preventDefault();
-        $(".A1").hide();
-    });
-    // Q2
-    $(".A2").hide();
-    $('.Q2').click(function (e) {
-        e.preventDefault();
-        $(".A2").toggle();;
-    });
-    $('.A2').click(function (e) {
-        e.preventDefault();
-        $(".A2").hide();
-    });
-    // Q3
-    $(".A3").hide();
-    $('.Q3').click(function (e) {
-        e.preventDefault();
-        $(".A3").toggle();;
-    });
-    $('.A3').click(function (e) {
-        e.preventDefault();
-        $(".A3").hide();
-    });
-    // Q4
-    $(".A4").hide();
-    $('.Q4').click(function (e) {
-        e.preventDefault();
-        $(".A4").toggle();;
-    });
-    $('.A4').click(function (e) {
-        e.preventDefault();
-        $(".A4").hide();
-    });
-    // Q5
-    $(".A5").hide();
-    $('.Q5').click(function (e) {
-        e.preventDefault();
-        $(".A5").toggle();;
-    });
-    $('.A5').click(function (e) {
-        e.preventDefault();
-        $(".A5").hide();
-    });
-    // Q6
-    $(".A6").hide();
-    $('.Q6').click(function (e) {
-        e.preventDefault();
-        $(".A6").toggle();;
-    });
-    $('.A6').click(function (e) {
-        e.preventDefault();
-        $(".A6").hide();
-    });
-    // Q7
-    $(".A7").hide();
-    $('.Q7').click(function (e) {
-        e.preventDefault();
-        $(".A7").toggle();;
-    });
-    $('.A7').click(function (e) {
-        e.preventDefault();
-        $(".A7").hide();
-    });
-
+    
     // 抓取網址參數後跳轉至vgsgeng
     var getUrlString = location.href;
     var url = new URL(getUrlString);
